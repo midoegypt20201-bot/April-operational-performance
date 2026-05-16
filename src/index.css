@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-teal: #01a79d;
+  --color-brand-teal-dark: #018a81;
+  --color-brand-green: #8cc342;
+  
+  --shadow-premium: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  --shadow-glass: 0 8px 32px 0 rgba(1, 167, 157, 0.1);
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-900 bg-[#f8fafc];
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-premium;
+}
+
+.presentation-bg {
+  background: radial-gradient(circle at 50% 30%, #0f2035 0%, #050e1a 100%);
+}
